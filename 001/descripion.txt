@@ -1,1 +1,1 @@
-Como criar ummenu lateral com: html, css e javaScript
+Como criar um menu lateral com: html, css e javaScript

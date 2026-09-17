@@ -1,0 +1,32 @@
+.gallery{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.panel{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: flex .6s cubic-bezier(0.25, 1, 0.5, 1);
+
+    /* background-color: black; */
+}
+
+.p1{
+    background-image: url('imagem.jpg');
+}
+.p2{
+    background-image: url('imagem.jpg');
+}
+.p3{
+    background-image: url('imagem.jpg');
+}
+.panel:hover{
+    flex: 4;
+    filter: grayscale(0%);
+}
