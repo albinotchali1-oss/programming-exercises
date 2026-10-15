@@ -31,7 +31,6 @@ input{
 }
 div.buttons{
     display: flex;
-    justify-content: space-evenly;
     gap: 10px;
 }
 div.buttons button{

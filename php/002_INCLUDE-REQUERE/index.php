@@ -7,14 +7,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <h1>Page Header</h1>
-    </header>
+    <?php include('./view/alt_header.php') ?>
     <main>
         <h2>Main Content for the page</h2>
     </main>
-    <footer>
-        <h2>Page footer</h2>
-    </footer>
+    <?php include('./view/header.php') ?>
 </body>
 </html>
