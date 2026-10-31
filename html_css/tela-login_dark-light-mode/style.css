@@ -1,0 +1,125 @@
+
+
+:root{
+    --bg-gradient: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    --bg-container: rgba(255, 255, 255, 0.08);
+    --text-color: #f5f5f5;
+    --bg-input: rgba(255, 255, 255, 0.12);
+    --btn-bg: #f5f5f5;
+    --btn-text: #111;    
+    --btn-hover: #ddd;
+    --link-color: #ccc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.light{
+    --bg-gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    --bg-container: rgba(255, 255, 255, 0.9);
+    --text-color: #222;
+    --bg-input: #f0f0f0;
+    --btn-bg: #222;
+    --btn-text: #fff;    
+    --btn-hover: #444;
+    --link-color: #222;  
+}
+body.light .tema{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+body{
+    background: var(--bg-gradient);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: fadeIn 1.4s ease-in;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container{
+    background: var(--bg-container);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.332);
+    text-align: center;
+
+    form {
+        text-align: start;
+        color: var(--text-color);
+    }
+    h2{
+        margin-bottom: 40px;
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    input{
+        width: 100%;
+        padding: 14px 15px;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        background: var(--bg-input);
+        color: var(--text-color);
+    }
+    input::placeholder{
+        color: #aaa;
+    }
+    button{
+        width: 100%;
+        padding: 14px;
+        background: var(--btn-bg);
+        border: none;
+        border-radius: 8px;
+        color: var(--btn-text);
+        font-size: 1.2rem;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: all .3s ease;
+        &:hover{
+            background: var(--btn-hover);
+        }
+    }
+    a{
+        color: var(--link-color);
+        text-decoration: none;
+        font-size: 1rem;
+        &:hover{
+            text-decoration: underline;
+            color: var(--text-color);
+        }
+    }
+}
+.tema{
+    position: absolute;
+    top: 20px; right: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 18px;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
